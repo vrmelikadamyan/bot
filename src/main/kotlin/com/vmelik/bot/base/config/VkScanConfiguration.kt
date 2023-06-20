@@ -6,6 +6,5 @@ import org.springframework.context.annotation.Configuration
 
 @Configuration
 @ComponentScan("com.vmelik.bot.vk")
-@ConditionalOnProperty(name = ["platform"], havingValue = "vk")
-class VkScanConfiguration {
-}
+@ConditionalOnProperty(name = ["platform.vk.enabled"], havingValue = "true")
+class VkScanConfiguration
